@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>
+
+</title>
+</head>
+
+<body bgcolor="darkcyan">
+<form method="post" action="server.html">
+<table  align="center" width="700" height="600" bgcolor="lighblue">
+<caption><font color="red" face="tahoma" size="6"> ITI Summer Training Registration Form </font></caption>
+<tr>
+<th>Name</th>
+<td>  <input type="text" placeholder="👤 Enter user Name" name="usr_name" size="65"/></td>
+</tr>
+
+<tr>
+<th>Password</th>
+<td>  <input type="password" placeholder="🔑 Enter user password" name="usr_pass" size="65"/></td>
+</tr>
+<tr>
+<th>Phone</th>
+<td>  <input type="tel" placeholder="📞  000-00000000" name="phone" size="45"/></td>
+</tr>
+
+<tr>
+<th>Email</th>
+<td>  <input type="email" placeholder="📩Enter your Email" name="mail" size="65"/></td>
+</tr>
+
+<tr>
+<th>Birth Date</th>
+<td>  <input type="date"  name="usr_brth" /></td>
+</tr>
+
+<tr>
+<th>Image</th>
+<td>  <input type="file"  name="usr_img" /></td>
+</tr>
+
+
+<tr>
+<th>Grad Year</th>
+<td>  <input type="number"  name="stdyr" min='3' max='4' /></td>
+</tr>
+
+
+<tr>
+<th>Gender</th>
+<td>
+<table>
+<tr>
+  <input type="radio"  name="gender" value="male"  /> 👦👦Male
+<input type="radio"  name="gender" value="female"  />👧👧FeMale 
+</tr>
+
+</table>
+
+</td>
+</tr>
+
+<tr>
+<th>Cources</th>
+<td>
+<table>
+<tr>
+<td><input type="checkbox"  name="crs" value="HTML"  />HTML</td>
+<td><input type="checkbox"  name="crs" value="JS"  />JS</td>
+<td><input type="checkbox"  name="crs" value="PHP"  />PHP</td>
+</tr>
+<tr>
+<td><input type="checkbox"  name="crs" value="angular"  />Angular</td>
+<td><input type="checkbox"  name="crs" value="react"  />React</td>
+<td><input type="checkbox"  name="crs" value="vue"  />vue</td>
+</tr>
+</table>
+</td>
+
+</tr>
+<tr>
+<th>Faculty</th>
+<td>
+<select name="faculty">
+<option />choose Faculty
+<option value="FCI"/>FCI
+<option value="engineering"/>Engineering
+<option value="science"/>sciene
+<option value="pharmacy"/>pharmacy
+<option value="Medecine"/>Medecine
+</select>
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<table align="center">
+<tr align="center">
+<td><input type="submit" value="Register"/></td>
+<td><input type="reset" value="Cancel"/></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>
