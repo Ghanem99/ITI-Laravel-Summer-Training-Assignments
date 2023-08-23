@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--<script src="primitive types.js"></script>-->
+    <script>
+        //alert("welcome from head ");
+        //var if4;
+        //var _if;
+        //var $if;
+        //var f;
+        //var if_true;
+        //var _name;
+        //==== primitive types
+        //var str = "ali";
+        /*  str=3  // str=3 losely type */
+        //console.log(str, typeof str)
+        //str = "A";
+        //str = '3';
+
+        //console.log('ST 2023 ')
+        //console.log("my name is abdallah" + "my age is 29" + "i work at iti ")
+        //console.log('i\'m developer')
+        //console.log("i\"m developer")
+        //console.log('i\\m developer')
+        //console.log('i\n m developer')
+
+        //console.log("my name is abdallahmy  age is \
+        //        i work  at iti ")
+        //console.log(`my name is abdallahmy
+        //                 age is 29          `)
+
+        //var num = 10;
+
+        //var bool = true;
+
+        var x; // type= undefined 
+        var y = null;
+
+        // bool+bool reyrn num = 2
+
+
+        // ================== non primitve objects 1- language object
+        //var str="ali" //ptimitive string
+
+      /*  var str = new String("welcome to js")
+
+        typeof str // type=  object 
+        str.constructor.name // String 
+        str.length // 13 
+        str[1] // "e"
+        str.charAt(2) // "l"
+        str.indexOf('e') // 1
+        str.lastIndexOf("e") // 6
+
+        str.indexOf('z')  // -1 
+        str.valueOf()// "welcome to js"  return primitive value from object
+        str.substring(1, 4) // return string in indexes 1,2,3
+
+        str.substring(4)  // cutting for first 4 indexes and return rest of string
+
+        str.slice(1, 4) // return string in indexes 1,2,3
+
+        str.slice(4)  // cutting for first 4 indexes and return rest of string
+        str.slice(-2) // "js"
+        str.substr(1, 4)// return string in indexes 1,2,3,4
+        str.toLowerCase()// return string in small letters 
+        str.toUpperCase()// return string in Capital letters 
+        str.replace("w", "v")
+        str.split() // return array has one index its value == str value 
+        str.split(" ") // ['welcome', 'to', 'js']
+
+        str.split(" ")[0][0] //"w"
+        */
+        var newStr=""
+        var str = new String("ITI Summer Training 2023")
+        console.log(`Before : ${str.valueOf()}`)
+        for (var i = 0; i < str.length; i++) {  // I==I
+            if (str[i] == str[i].toUpperCase()) {
+             newStr+= str[i].toLowerCase();
+
+            }
+            else {
+                newStr +=  str[i].toUpperCase()
+            }
+
+        }
+        console.log(`After : ${newStr}`)
+
+
+
+    </script>
+
+    <script src="primitive types.js"></script>
+</head>
+<body>
+    <!--<script>
+        alert("welcome from body ");
+    </script>-->
+</body>
+</html>
