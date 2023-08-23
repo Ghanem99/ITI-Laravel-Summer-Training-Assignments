@@ -1,0 +1,24 @@
+body {
+    background-image: url(../lab/Images/1.jpg);
+}
+
+form {
+    /* border: 2px solid white; */
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 10x;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
