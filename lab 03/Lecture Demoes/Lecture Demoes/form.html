@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <style>
+       table{
+           /*border:2px solid black;*/
+           width:300px;
+           height:330px;
+           padding:10px;
+           margin:10px auto;
+           border-radius:10%;
+           background-color:darkslategrey;
+       }
+       div{
+           border:2px solid black;
+           background-image:url(form/login.png);
+           width:30px;
+           border-radius:20%;
+       }
+       #log{
+           height:30px;
+       }
+       #frmname, #frmmail, #frmpass {
+           background-image: url(form/user.png);
+           background-repeat: no-repeat;
+           padding-left: 30px;
+           display: inline-block;
+           height: 25px;
+           width: 220px;
+           background-color: darkslategrey;
+           border:0;
+           outline:0;
+           border-bottom:3px solid darkgray;
+       }
+       #frmmail {
+           background-image: url(form/email.png);
+       }
+       #frmpass {
+           background-image: url(form/pass.png);
+       }
+       #frmname:active, #frmmail:active, #frmpass:active{
+           border-bottom:3px solid blue;
+       }
+           #frmname:focus, #frmmail:focus, #frmpass:focus {
+               border-bottom: 3px solid blue;
+           }
+          #img:hover{
+               border:2px solid red;
+               border-radius:20%;
+           }
+   </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th><img src="images/5.png" /></th>
+            </tr>
+            <tr>
+                <th><input type="text" placeholder="enter ur name " name="usr_name" id="frmname" /></th>
+            </tr>
+
+            <tr>
+                <th><img src="images/mail.png" /></th>
+            </tr>
+            <tr>
+                <th><input type="email" placeholder="enter ur email " name="usr_name" id="frmmail" /></th>
+            </tr>
+
+            <tr>
+                <th><img src="images/12.png" /></th>
+            </tr>
+            <tr>
+                <th><input type="password" placeholder="enter ur Password " name="usr_name" id="frmpass" /></th>
+            </tr>
+
+            <tr>
+                <th id="log"><span><img id="img" src="form/login.png"/></span></th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
