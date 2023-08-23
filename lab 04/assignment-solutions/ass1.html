@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string = "the quick brown fox";
+        var words = string.split(" ");
+        var result = "";
+        for (var i = 0; i < words.length; i++) {
+            var word = words[i];
+            var firstLetter = word[0];
+            var rest = word.slice(1);
+            var capitalizedWord = firstLetter.toUpperCase() + rest;
+            result += capitalizedWord + " ";
+        }
+        console.log(result);
+    </script>
+</body>
+</html>
