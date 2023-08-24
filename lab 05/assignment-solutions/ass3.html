@@ -12,14 +12,21 @@
         // The 'default' parameter in the given function is the value that specifies the 
         // language-sensitive representation of the date. In this case, it represents the default
         //  language of the user's environment.
-        function getMonthName(date) {
-            // `{month: 'long'}` options to retrieve the long-form month name in the default language.
-            const monthName = date.toLocaleString('default', { month: 'long' });
-            return monthName;
+        // function getMonthName(date) {
+        //     // `{month: 'long'}` options to retrieve the long-form month name in the default language.
+        //     const monthName = date.toLocaleString('default', { month: 'long' });
+        //     return monthName;
+        // }
+
+        // another way to do this
+        function getMonthName3(date) { 
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+                                "July", "August", "September", "October", "November", "December"];
+            return monthNames[date.getMonth()];
         }
 
-        const myDate = new Date('2021-01-15');
-        console.log(getMonthName(myDate));
+        var date = new Date();
+        console.log(getMonthName3(date));
 
     </script>
 </body>
