@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    var numbers = [3, 1, 2, 4, 3, 5, 1];
+
+    // 1.1 remove
+    function removeDuplicates(arr) {
+        var result = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (!(arr[i] in result)) {
+                result.push(arr[i]);
+            }
+        }
+        return result;
+    }
+
+    var uniqueNumbers = removeDuplicates2(numbers);
+
+    var ascendingNumbers = uniqueNumbers.sort(function(a, b) {
+         return a - b; 
+        });
+
+    // Filter numbers > 50 
+    function filterNumbersGreaterThan50(arr) {
+        var result = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > 50) {
+                result.push(arr[i]);
+            }
+        }
+        return result;
+    }
+    var numbersGreaterThan50 = filterNumbersGreaterThan50(ascendingNumbers);
+
+    // Filter numbers larger than 50 using the built-in array filter function
+    var numbersGreaterThan50BuiltIn = ascendingNumbers.filter(function(value) {
+        return value > 50 ;
+    });
+    
+    function getMaxNumber2(arr) {
+        var max = arr[0];
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    function getMinNumber2(arr) {
+        var min = arr[0];
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    // if the function is called with an array `arr` like `getmaxnumber([1, 2, 3, 4, 5])`, the
+    // spread operator expands the array into individual arguments like 
+    // `Math.max(1, 2, 3, 4, 5)`, which returns the maximum value `5
+
+    function getMaxNumber(arr) {
+        return Math.max(...arr);
+    }
+
+    function getMinNumber(arr) {
+        return Math.min(...arr);
+    }
+
+    var maxNumber = getMaxNumber(ascendingNumbers);
+    var minNumber = getMinNumber(ascendingNumbers);
+
+    console.log("Unique Numbers: ", uniqueNumbers);
+    console.log("Ascending Numbers: ", ascendingNumbers);
+    console.log("Numbers greater than 50 (user-defined): ", numbersGreaterThan50);
+    console.log("Numbers greater than 50 (built-in filter): ", numbersGreaterThan50BuiltIn);
+    console.log("Max Number: ", maxNumber);
+    console.log("Min Number: ", minNumber);
+
+
+    </script>
+</body>
+</html>

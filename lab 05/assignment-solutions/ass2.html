@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumAll(numbersArray) {
+            var sum = 0;
+            for (var i = 0; i < numbersArray.length; i++) {
+                sum += numbersArray[i];
+            }
+            return sum;
+        }
+
+        function product(numbersArray) {
+            var product = 1;
+            for (var i = 0; i < numbersArray.length; i++) {
+                product *= numbersArray[i];
+            }
+            return product;
+        }
+
+        function sumAll(numbersArray) {
+            return eval(numbersArray.join("+"));
+        }
+
+        function productAll(numbersArray) {
+            return eval(numbersArray.join("*"));
+        }
+
+        function sumAll2() {
+            var numbersArray = Array.from(arguments);
+            var sum = eval(numbersArray.join('+'));
+            return sum;
+        }
+
+        function productAll2() {
+            var numbersArray = Array.from(arguments);
+            var product = eval(numbersArray.join('*'));
+            return product;
+        }
+
+    console.log(sumAll2(1, 2, 3, 4, 5));
+    console.log(productAll2(1, 2, 3, 4, 5));
+
+
+    </script>
+</body>
+</html>
